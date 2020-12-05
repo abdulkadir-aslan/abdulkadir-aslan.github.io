@@ -541,8 +541,30 @@ Markdown
 }
 
 .navbar-brand {
-  padding-top: 1px;
-  padding-bottom: 1px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  margin-right: 0;
+}
+
+.navbar-brand span:first-child {
+  align-self: center;
+  font-size: 32.9px;
+  font-weight: 1000;
+  letter-spacing: -1.17px;
+  color: #e93e34;
+}
+.navbar-brand span:nth-child(2) {
+  margin-top: -20px;
+  align-self: center;
+  font-family: AutumnMoon;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: -1.17px;
+  color: aliceblue;
 }
 
 .navbar .navbar-nav .active {
@@ -558,7 +580,7 @@ Avatar
 */
 
 .avatar {
-  border-radius: 50%;
+  
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
   max-width: 300px;
   -webkit-mask-image: url(../img/mask/circle.svg)!important;

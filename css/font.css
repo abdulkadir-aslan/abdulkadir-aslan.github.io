@@ -24,7 +24,12 @@
   font-weight: 900;
   src: url("../fonts/fontawesome/fa-solid-900.eot");
   src: url("../fonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("../fonts/fontawesome/fa-solid-900.woff") format("woff"), url("../fonts/fontawesome/fa-solid-900.ttf") format("truetype"), url("../fonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg"); }
-
+  @font-face {
+    font-family:AutumnMoon;
+    src:url(../fonts/autumn-moon/AutumnMoon.woff) format("woff"),url(../fonts/autumn-moon/AutumnMoon.woff2) format("woff2");
+    font-weight:400;
+    font-style:normal}
+  
 
 
 
