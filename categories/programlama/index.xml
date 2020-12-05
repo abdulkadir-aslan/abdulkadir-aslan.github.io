@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programlama on Abdulkadir</title>
+    <link>https://abdulkadir-aslan.github.io/categories/programlama/</link>
+    <description>Recent content in Programlama on Abdulkadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://abdulkadir-aslan.github.io/categories/programlama/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vhdl Uygulama</title>
+      <link>https://abdulkadir-aslan.github.io/blog/2020-12/vhdl-uygulama/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://abdulkadir-aslan.github.io/blog/2020-12/vhdl-uygulama/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yapay Sinir Ağları Uygulama</title>
+      <link>https://abdulkadir-aslan.github.io/blog/2020-12/yapay-sinir-a%C4%9Flar%C4%B1-uygulama/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://abdulkadir-aslan.github.io/blog/2020-12/yapay-sinir-a%C4%9Flar%C4%B1-uygulama/</guid>
+      <description>YSA ⌘ - command
+⌥ - option
+⌃ - control
+⇧ - shift
+␣ - space</description>
+    </item>
+    
+  </channel>
+</rss>

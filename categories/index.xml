@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Abdulkadir</title>
+    <link>https://abdulkadir-aslan.github.io/categories/</link>
+    <description>Recent content in Categories on Abdulkadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://abdulkadir-aslan.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programlama</title>
+      <link>https://abdulkadir-aslan.github.io/categories/programlama/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://abdulkadir-aslan.github.io/categories/programlama/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>https://abdulkadir-aslan.github.io/categories/test/</link>
+      <pubDate>Wed, 19 Aug 2015 20:29:37 -0700</pubDate>
+      
+      <guid>https://abdulkadir-aslan.github.io/categories/test/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
