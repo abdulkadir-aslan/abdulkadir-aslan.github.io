@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Proje on Abdulkadir</title>
+    <link>https://abdulkadir-aslan.github.io/categories/proje/</link>
+    <description>Recent content in Proje on Abdulkadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Sat, 10 Jul 2021 20:14:59 +0800</lastBuildDate><atom:link href="https://abdulkadir-aslan.github.io/categories/proje/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BİLEĞE TAKILAN IOT TABANLI HASTA TAKİP SİSTEMİ</title>
+      <link>https://abdulkadir-aslan.github.io/experience/projeler/hasta_takip_sistemi/</link>
+      <pubDate>Sat, 10 Jul 2021 20:14:59 +0800</pubDate>
+      
+      <guid>https://abdulkadir-aslan.github.io/experience/projeler/hasta_takip_sistemi/</guid>
+      <description>Sağlığa olan ihtiyaç kişiden kişiye ve toplumdan topluma değiştiği gibi zamanın ilerlemesiyle de değişmekte ve artmaktadır. Bilginin teknolojik gelişmelere paralel olarak hızla yayılması sağlık hizmetlerini geliştirmekle birlikte bireyler tarafından sağlık hizmetlerinde beklentiyi de önemli ölçüde arttırmıştır. Bu nedenle kaliteli sağlık bakımı ve bakım kalitesinin ölçülmesi günümüz sağlık bakımında büyük öneme sahiptir. Hastaların gün içerisinde ihtiyaç ve sağlık durumları ile ilgili belirli aralıklarla kontrol edilmesi gerekmektedir. Bu kontrollerin sıklaşması aile fertlerini maddi manevi yönden olumsuz etkilemektedir. Bu durumdaki hastalar genelde yatalak olduğundan hastane ile ev arası ulaşım zahmetli olur. Hasta ile ilgilenen ferd’in eğer çalıştığı bir işi varsa sürekli ordan izin alması iş yerine sorun teşkil eder. Bu gibi vakaları en aza indirmek ve hasta ile ilgilenen kişinin verimli zaman geçirmesi için hazırlanan projemiz,hasta fonksiyonlarını IOT cihazlar ile Doktora ulaştırmayı amaçlıyor. Proje ile birlikte hastanın hayati vücut değerleri Doktor için önceden analiz edilmiş olacaktır. Küçük elektronik geliştirme kartları ve giyilebilir teknoloji modülleri yardımı ile çalışan ürün, harici bir cihaza ihtiyaç duymadan topladığı verileri bulut sistemine ve ordan hastanın Doktoruna gönderebiliyor. Ayrıca proje tamamen hastanın rahatlığı düşünülerek geliştirilecek olup hastanın bileğine takılarak onu rahatsız etmeyecek şekilde tasarlanacaktır. Projede amacımız insan sağlığı ve konforu olduğu için görünüş ve konfor bakımından en ideal olanları kullanılacaktır.</description>
+    </item>
+    
+    <item>
+      <title>Bahçe Sulama Otomasyonu</title>
+      <link>https://abdulkadir-aslan.github.io/experience/projeler/bsotomasyonu/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://abdulkadir-aslan.github.io/experience/projeler/bsotomasyonu/</guid>
+      <description>Günümüzde kablosuz ağlarda ki teknolojik gelişmeler birçok alanda olduğu gibi tarımsal alanda da etkisini göstermiştir. Tarımda, artan talep ihtiyacını karşılamak amacıyla üretimi sağlıklı bir biçimde yapmak ve kolaylaştırmak için kablosuz ağlardan yararlanma yoluna gidilmiştir. Bu projede tarımda önemli bir nokta haline gelmiş olan sulama faaliyetleri, teknolojiyle desteklenerek akıllı bir sistem tasarlanmıştır. Bu çalışmamızda, bahçeye yerleştirilmiş toprak nem sensörü üzerinden alınan veriler Ardunio UNO denetleyicisi ile işlenir, işlenen bu verilere göre sulamaya ihtiyaç duyulduğu anda su motoru otomatik olarak çalışmakta ve topraktaki bitki ihtiyacı olan suyu karşılamaktadır. Toprak gerekli su ihtiyacını karşıladığında ise su motoru otomatik olarak kapanmaktadır. Ardunio UNO ile buluetooth kontrolüyle seçtiğimiz bitkiyi sulayabiliriz. Bu proje ile su kaynaklarının optimum kullanılması, güç tasarrufunun maximum sağlanması, doğru zamanda doğru miktarda sulamayla aşırı ve gereksiz sulama problemlerinin ortadan kaldırılması amaçlanmıştır.
+Bağlantı Şeması Buluetooth Apk  Buradan indirebilirsiniz
+ Ardunio Kodu #include&amp;lt;SoftwareSerial.h&amp;gt;SoftwareSerial myserial(6,7); int sensor = A0; int motor = 13; int veri; void setup() { pinMode(sensor,INPUT); pinMode(motor,OUTPUT); Serial.begin(9600); myserial.begin(9600); } void loop() { veri=analogRead(sensor); Serial.println(veri); if(myserial.available()) { char data=myserial.read(); Serial.println(data); if ( data == &amp;#39;1&amp;#39; &amp;amp;&amp;amp; veri&amp;gt;600 ) { digitalWrite(motor,HIGH); delay(4000); digitalWrite(motor,LOW); }else{ digitalWrite(motor,LOW); } if ( data == &amp;#39;2&amp;#39; &amp;amp;&amp;amp; veri&amp;gt;600 ) { digitalWrite(motor,HIGH); delay(9000); digitalWrite(motor,LOW); } else{ digitalWrite(motor,LOW); } if (data == &amp;#39;3&amp;#39; &amp;amp;&amp;amp; veri&amp;gt;600) { digitalWrite(motor,HIGH); delay(7000); digitalWrite(motor,LOW); }else{ digitalWrite(motor,LOW); } if (data == &amp;#39;4&amp;#39; &amp;amp;&amp;amp; veri&amp;gt;600 ) { digitalWrite(motor,HIGH); delay(2000); digitalWrite(motor,LOW); } else{ digitalWrite(motor,LOW); } } } </description>
+    </item>
+    
+  </channel>
+</rss>

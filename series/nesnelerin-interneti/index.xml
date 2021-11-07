@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nesnelerin Interneti on Abdulkadir</title>
+    <link>https://abdulkadir-aslan.github.io/series/nesnelerin-interneti/</link>
+    <description>Recent content in Nesnelerin Interneti on Abdulkadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Sat, 10 Jul 2021 20:14:59 +0800</lastBuildDate><atom:link href="https://abdulkadir-aslan.github.io/series/nesnelerin-interneti/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BİLEĞE TAKILAN IOT TABANLI HASTA TAKİP SİSTEMİ</title>
+      <link>https://abdulkadir-aslan.github.io/experience/projeler/hasta_takip_sistemi/</link>
+      <pubDate>Sat, 10 Jul 2021 20:14:59 +0800</pubDate>
+      
+      <guid>https://abdulkadir-aslan.github.io/experience/projeler/hasta_takip_sistemi/</guid>
+      <description>Sağlığa olan ihtiyaç kişiden kişiye ve toplumdan topluma değiştiği gibi zamanın ilerlemesiyle de değişmekte ve artmaktadır. Bilginin teknolojik gelişmelere paralel olarak hızla yayılması sağlık hizmetlerini geliştirmekle birlikte bireyler tarafından sağlık hizmetlerinde beklentiyi de önemli ölçüde arttırmıştır. Bu nedenle kaliteli sağlık bakımı ve bakım kalitesinin ölçülmesi günümüz sağlık bakımında büyük öneme sahiptir. Hastaların gün içerisinde ihtiyaç ve sağlık durumları ile ilgili belirli aralıklarla kontrol edilmesi gerekmektedir. Bu kontrollerin sıklaşması aile fertlerini maddi manevi yönden olumsuz etkilemektedir. Bu durumdaki hastalar genelde yatalak olduğundan hastane ile ev arası ulaşım zahmetli olur. Hasta ile ilgilenen ferd’in eğer çalıştığı bir işi varsa sürekli ordan izin alması iş yerine sorun teşkil eder. Bu gibi vakaları en aza indirmek ve hasta ile ilgilenen kişinin verimli zaman geçirmesi için hazırlanan projemiz,hasta fonksiyonlarını IOT cihazlar ile Doktora ulaştırmayı amaçlıyor. Proje ile birlikte hastanın hayati vücut değerleri Doktor için önceden analiz edilmiş olacaktır. Küçük elektronik geliştirme kartları ve giyilebilir teknoloji modülleri yardımı ile çalışan ürün, harici bir cihaza ihtiyaç duymadan topladığı verileri bulut sistemine ve ordan hastanın Doktoruna gönderebiliyor. Ayrıca proje tamamen hastanın rahatlığı düşünülerek geliştirilecek olup hastanın bileğine takılarak onu rahatsız etmeyecek şekilde tasarlanacaktır. Projede amacımız insan sağlığı ve konforu olduğu için görünüş ve konfor bakımından en ideal olanları kullanılacaktır.</description>
+    </item>
+    
+  </channel>
+</rss>

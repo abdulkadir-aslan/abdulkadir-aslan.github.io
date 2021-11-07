@@ -6,22 +6,31 @@
     <description>Recent content in Series on Abdulkadir</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://abdulkadir-aslan.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jul 2021 20:14:59 +0800</lastBuildDate><atom:link href="https://abdulkadir-aslan.github.io/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Vhdl</title>
-      <link>https://abdulkadir-aslan.github.io/series/vhdl/</link>
-      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      <title>Nesnelerin Interneti</title>
+      <link>https://abdulkadir-aslan.github.io/series/nesnelerin-interneti/</link>
+      <pubDate>Sat, 10 Jul 2021 20:14:59 +0800</pubDate>
       
-      <guid>https://abdulkadir-aslan.github.io/series/vhdl/</guid>
+      <guid>https://abdulkadir-aslan.github.io/series/nesnelerin-interneti/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>YSA</title>
-      <link>https://abdulkadir-aslan.github.io/series/ysa/</link>
-      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      <title>Programlama</title>
+      <link>https://abdulkadir-aslan.github.io/series/programlama/</link>
+      <pubDate>Sat, 10 Jul 2021 20:14:59 +0800</pubDate>
       
-      <guid>https://abdulkadir-aslan.github.io/series/ysa/</guid>
+      <guid>https://abdulkadir-aslan.github.io/series/programlama/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Otomasyon</title>
+      <link>https://abdulkadir-aslan.github.io/series/otomasyon/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://abdulkadir-aslan.github.io/series/otomasyon/</guid>
       <description></description>
     </item>
     

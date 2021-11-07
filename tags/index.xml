@@ -6,31 +6,67 @@
     <description>Recent content in Tags on Abdulkadir</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://abdulkadir-aslan.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jul 2021 20:14:59 +0800</lastBuildDate><atom:link href="https://abdulkadir-aslan.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>MATLAB</title>
-      <link>https://abdulkadir-aslan.github.io/tags/matlab/</link>
-      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      <title>IOT</title>
+      <link>https://abdulkadir-aslan.github.io/tags/iot/</link>
+      <pubDate>Sat, 10 Jul 2021 20:14:59 +0800</pubDate>
       
-      <guid>https://abdulkadir-aslan.github.io/tags/matlab/</guid>
+      <guid>https://abdulkadir-aslan.github.io/tags/iot/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>vhdl</title>
-      <link>https://abdulkadir-aslan.github.io/tags/vhdl/</link>
-      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      <title>Nesnelerin İnterneti</title>
+      <link>https://abdulkadir-aslan.github.io/tags/nesnelerin-interneti/</link>
+      <pubDate>Sat, 10 Jul 2021 20:14:59 +0800</pubDate>
       
-      <guid>https://abdulkadir-aslan.github.io/tags/vhdl/</guid>
+      <guid>https://abdulkadir-aslan.github.io/tags/nesnelerin-interneti/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>YSA</title>
-      <link>https://abdulkadir-aslan.github.io/tags/ysa/</link>
-      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      <title>Python</title>
+      <link>https://abdulkadir-aslan.github.io/tags/python/</link>
+      <pubDate>Sat, 10 Jul 2021 20:14:59 +0800</pubDate>
       
-      <guid>https://abdulkadir-aslan.github.io/tags/ysa/</guid>
+      <guid>https://abdulkadir-aslan.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raspberry pi3</title>
+      <link>https://abdulkadir-aslan.github.io/tags/raspberry-pi3/</link>
+      <pubDate>Sat, 10 Jul 2021 20:14:59 +0800</pubDate>
+      
+      <guid>https://abdulkadir-aslan.github.io/tags/raspberry-pi3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arduino</title>
+      <link>https://abdulkadir-aslan.github.io/tags/arduino/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://abdulkadir-aslan.github.io/tags/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mobil app</title>
+      <link>https://abdulkadir-aslan.github.io/tags/mobil-app/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://abdulkadir-aslan.github.io/tags/mobil-app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>otomasyon</title>
+      <link>https://abdulkadir-aslan.github.io/tags/otomasyon/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://abdulkadir-aslan.github.io/tags/otomasyon/</guid>
       <description></description>
     </item>
     

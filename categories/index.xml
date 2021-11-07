@@ -6,13 +6,22 @@
     <description>Recent content in Categories on Abdulkadir</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://abdulkadir-aslan.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jul 2021 20:14:59 +0800</lastBuildDate><atom:link href="https://abdulkadir-aslan.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Programlama</title>
-      <link>https://abdulkadir-aslan.github.io/categories/programlama/</link>
-      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      <title>Proje</title>
+      <link>https://abdulkadir-aslan.github.io/categories/proje/</link>
+      <pubDate>Sat, 10 Jul 2021 20:14:59 +0800</pubDate>
       
-      <guid>https://abdulkadir-aslan.github.io/categories/programlama/</guid>
+      <guid>https://abdulkadir-aslan.github.io/categories/proje/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://abdulkadir-aslan.github.io/categories/python/</link>
+      <pubDate>Sat, 10 Jul 2021 20:14:59 +0800</pubDate>
+      
+      <guid>https://abdulkadir-aslan.github.io/categories/python/</guid>
       <description></description>
     </item>
     
