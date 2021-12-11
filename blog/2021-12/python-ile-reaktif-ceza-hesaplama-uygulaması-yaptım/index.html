@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="zn-Hans">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
+  <meta name="author" content="Abdulkadir Aslan">
+  <meta name="description" content="Reaktif Ceza Nedir Nasıl Oluşuyor ? Motorların, buzdolaplarının ve flüoresan lamba balastlarının işlevlerini yerine getirebilmesi için sargılarında manyetik alan oluşması gereklidir. Bunun için gerekli olan enerjiye reaktif enerji denilmektedir. Elektrik dağıtım şirketleri, reaktif enerjinin, tüketilen aktif enerjinin belli bir oran dahilinde kalmasını şart koşmaktadırlar. Özel trafolu işletmelerde sıklıkla karşı karşıya kalınan bu sorun, normal işletme koşullarına göre tasarımı yapılmış elektrik panolarındaki kondansatörler vasıtasıyla giderilmektedir. Anormal işletme koşullarında ise trafonun manyetik alanı için gereken reaktif enerji, trafodan çekilen çok küçük miktardaki aktif enerji oranı ve/veya büyük kapasiteli kondansatörlerin varlığın nedeniyle işletmeyi reaktif ceza faturasıyla karşı karşıya getirmektedir.
+Görünür , Aktif Ve Reaktif Güç Arasındaki Bağlantı  Aktif güç elektrikte iş yapan güçtür. P ile gösterilen aktif güç şebekeden çekilen akım ile gerilim arasındaki açının (φ) cosinüsü ile akım ve gerilimin çarpılması ile bulunur . (P=V.I.cosφ). Sistem üç fazlı ise çekilen güç de √3 ile çarpılır (P=√3.V.I.cosφ). Aktif gücün birimi Watt’tır(W). Reaktif güç ise manyetik alanla çalışan motor, trafo gibi elektrik makinelerinin çektiği güçtür ve manyetik alanın oluşması için kullanılır. Reaktif güç; şebekeden çekilen akım ve gerilimin arasındaki açının (φ) sinüsü ile akım ve gerilimin çarpımı ile ifade edilir ve Q ile gösterilir Q=P.tanφ. Reaktif gücün birimi Var dır. Görünür güç şebekeden çekilen görünür güç olarak bilinir S ile gösterilir ve tek fazlı sistemlerde S=V.">
+  
+  <meta property="og:title" content="Python İle Reaktif Ceza Hesaplama Uygulaması Yaptım" />
+<meta property="og:description" content="Reaktif Ceza Nedir Nasıl Oluşuyor ? Motorların, buzdolaplarının ve flüoresan lamba balastlarının işlevlerini yerine getirebilmesi için sargılarında manyetik alan oluşması gereklidir. Bunun için gerekli olan enerjiye reaktif enerji denilmektedir. Elektrik dağıtım şirketleri, reaktif enerjinin, tüketilen aktif enerjinin belli bir oran dahilinde kalmasını şart koşmaktadırlar. Özel trafolu işletmelerde sıklıkla karşı karşıya kalınan bu sorun, normal işletme koşullarına göre tasarımı yapılmış elektrik panolarındaki kondansatörler vasıtasıyla giderilmektedir. Anormal işletme koşullarında ise trafonun manyetik alanı için gereken reaktif enerji, trafodan çekilen çok küçük miktardaki aktif enerji oranı ve/veya büyük kapasiteli kondansatörlerin varlığın nedeniyle işletmeyi reaktif ceza faturasıyla karşı karşıya getirmektedir.
+Görünür , Aktif Ve Reaktif Güç Arasındaki Bağlantı  Aktif güç elektrikte iş yapan güçtür. P ile gösterilen aktif güç şebekeden çekilen akım ile gerilim arasındaki açının (φ) cosinüsü ile akım ve gerilimin çarpılması ile bulunur . (P=V.I.cosφ). Sistem üç fazlı ise çekilen güç de √3 ile çarpılır (P=√3.V.I.cosφ). Aktif gücün birimi Watt’tır(W). Reaktif güç ise manyetik alanla çalışan motor, trafo gibi elektrik makinelerinin çektiği güçtür ve manyetik alanın oluşması için kullanılır. Reaktif güç; şebekeden çekilen akım ve gerilimin arasındaki açının (φ) sinüsü ile akım ve gerilimin çarpımı ile ifade edilir ve Q ile gösterilir Q=P.tanφ. Reaktif gücün birimi Var dır. Görünür güç şebekeden çekilen görünür güç olarak bilinir S ile gösterilir ve tek fazlı sistemlerde S=V." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://abdulkadir-aslan.github.io/blog/2021-12/python-ile-reaktif-ceza-hesaplama-uygulamas%C4%B1-yapt%C4%B1m/" />
+<meta property="article:published_time" content="2021-12-10T20:14:59+08:00" />
+<meta property="article:modified_time" content="2021-12-10T20:14:59+08:00" />
+
+
+
+  <title>
+  
+       Python İle Reaktif Ceza Hesaplama Uygulaması Yaptım | Abdulkadir 
+  
+  </title>
+
+  <link rel="canonical" href="https://abdulkadir-aslan.github.io/blog/2021-12/python-ile-reaktif-ceza-hesaplama-uygulamas%C4%B1-yapt%C4%B1m/">
+
+  
+  
+
+  
+  <link href="https://abdulkadir-aslan.github.io/css/vendors-extensions/fontawesome/all.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:300,400,500,600">
+  <link href="https://abdulkadir-aslan.github.io/css/font.css" rel="stylesheet"> 
+    
+  
+  <link href="https://abdulkadir-aslan.github.io/css/vendors/bootstrap4/bootstrap.min.css" rel="stylesheet">
+  <link href="https://abdulkadir-aslan.github.io/css/vendors-extensions/mdb/mdb.min.css" rel="stylesheet"> 
+  <link href="https://abdulkadir-aslan.github.io/css/vendors/mdb/style.min.css" rel="stylesheet"> 
+  <link href="https://abdulkadir-aslan.github.io/css/main.css" rel="stylesheet">
+
+
+  
+  <link rel="shortcut icon"
+  
+      href="https://abdulkadir-aslan.github.io/img/icon.png"
+  
+  >
+
+
+  
+  
+
+  <style type="text/css">
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+  </style>
+
+
+  
+    
+    <link rel="stylesheet" href="https://abdulkadir-aslan.github.io/js/vendors/katex/katex.min.css">
+  
+  
+
+  
+    
+    <link rel="stylesheet" href="https://abdulkadir-aslan.github.io/css/vendors/highlight/github-gist.css">
+  
+
+</head>
+
+  <body class="bg-light" data-spy="scroll" data-target="#page-scrollspy" data-offset="90">
+  
+    
+    
+
+    
+      
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar p-0">
+    <div class="container">
+
+      
+      <a class="navbar-brand" href="https://abdulkadir-aslan.github.io/">
+          
+        
+        <span>Abdulkadir</span>
+        <span>Aslan</span>
+        
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item ">
+            <a class="nav-link" href="https://abdulkadir-aslan.github.io/">Home</a>
+          </li>
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="https://abdulkadir-aslan.github.io/blog/" >Blog  </a>
+            </li>
+          
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="https://abdulkadir-aslan.github.io/experience/" >Deneyimler  </a>
+            </li>
+          
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="https://abdulkadir-aslan.github.io/about/" >Hakkımda  </a>
+            </li>
+          
+          
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  
+ 
+      
+ 
+
+
+
+
+
+
+<div id="site-header" class="carousel slide carousel-fade" data-ride="carousel" style="height: 18rem;" >  
+
+  
+  
+  
+
+  
+  <div class="carousel-inner" role="listbox">
+    
+      
+
+        
+        <div class="carousel-item active">
+          <div class="view" style="background-image: url('https://abdulkadir-aslan.github.io/img/header-slides/electrical.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              
+              
+              
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://abdulkadir-aslan.github.io/img/header-slides//electronic.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://abdulkadir-aslan.github.io/img/header-slides//pp.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://abdulkadir-aslan.github.io/img/header-slides//soft.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+
+  
+  </div>
+  
+
+  
+  <div class="carousel-content text-center white-text wow fadeIn">
+    <div class="row mx-0 headfont mt-3 pt-4">
+      
+      <div class="col-12 col-sm-5 align-middle">
+        <a href="https://abdulkadir-aslan.github.io/">
+          
+            <img class="pull-right avatar avatar-md" src="https://abdulkadir-aslan.github.io/img/about.jpg" alt="" >
+          
+        </a>
+      </div>
+      
+      <div class="col-12 col-sm-7 text-left pl-2">
+        <a href="https://abdulkadir-aslan.github.io/">
+          <h1 class="mb-2 h1" style="font-weight: 300;" >
+            <strong>Abdulkadir</strong>
+          </h1>
+        </a>
+        
+
+             
+        <div class="mt-2" style="font-size: 1rem; color: white;">
+            
+              <a href="//github.com/abdulkadir-aslan" target="_blank" rel="noopener"><i class="fab fa-github pr-1" aria-hidden="true"></i></a>    
+            
+            
+              <a href="//linkedin.com/in/abdulkadiraslan" target="_blank" rel="noopener"><i class="fab fa-linkedin pr-1" aria-hidden="true"></i></a>
+            
+
+            
+              <a href="//facebook.com/abdulkadiraslan63" target="_blank" rel="noopener"><i class="fab fa-facebook pr-1" aria-hidden="true"></i></a>
+            
+
+            
+            <a href="//google.com/" target="_blank" rel="noopener"><i class="fab fa-google-plus pr-1" aria-hidden="true"></i></a>
+            
+
+            
+                <a href="//twitter.com/" target="_blank" rel="noopener"><i class="fab fa-twitter pr-1" aria-hidden="true"></i></a>
+            
+
+            
+                <a href="//instagram.com/" target="_blank" rel="noopener"><i class="fab fa-instagram pr-1" aria-hidden="true"></i></a>
+            
+    
+            
+    
+        
+            
+                <a href="mailto:abdulkadiraslan44@gmail.com"><i class="far fa-envelope-open pr-1" aria-hidden="true"></i></a>
+            
+    
+            
+
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
+  
+
+</div>
+  
+    
+
+    
+  
+  <main class="post-main-wrapper">
+    
+    
+    <div class="row">
+
+      
+
+      
+      <div class="col-md-10">
+      
+
+        
+        <div class="z-depth-1  post-wrapper white-bg single-post">
+
+          <div class="post-header text-center" >
+  <ul class="post-meta li-x">
+    
+      
+        <li><a href="https://abdulkadir-aslan.github.io/categories/python"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> Python </a></li>
+      
+    
+    
+      
+        <li><a href="https://abdulkadir-aslan.github.io/series/programlama"><i class="fas fa-bookmark pr-1" aria-hidden="true"></i>Programlama</a></li>
+      
+    
+  </ul>
+
+  <div class="px-4 post-heading">Python İle Reaktif Ceza Hesaplama Uygulaması Yaptım</div>
+
+  <ul class="post-meta li-x mt-1">
+    
+      <li>Dec 10, 2021</li>
+    
+
+    
+      <li class="middot"></li>
+      <li>3 minutes read</li>
+    
+  </ul>
+  
+    <div class="view">
+      <img src="https://abdulkadir-aslan.github.io/img/python/reaktif.png" />
+    </div>
+  
+
+</div>
+
+
+          <div class="post-content markdown">
+            <h2 id="reaktif-ceza-nedir-nasıl-oluşuyor-">Reaktif Ceza Nedir Nasıl Oluşuyor ?</h2>
+<p>Motorların, buzdolaplarının ve flüoresan lamba balastlarının işlevlerini yerine getirebilmesi için sargılarında manyetik alan oluşması gereklidir. Bunun için gerekli olan enerjiye reaktif enerji denilmektedir. Elektrik dağıtım şirketleri, reaktif enerjinin, tüketilen aktif enerjinin belli bir oran dahilinde kalmasını şart koşmaktadırlar. Özel trafolu işletmelerde sıklıkla karşı karşıya kalınan bu sorun, normal işletme koşullarına göre tasarımı yapılmış elektrik panolarındaki kondansatörler vasıtasıyla giderilmektedir. Anormal işletme koşullarında ise trafonun manyetik alanı için gereken reaktif enerji, trafodan çekilen çok küçük miktardaki aktif enerji oranı ve/veya büyük kapasiteli kondansatörlerin varlığın nedeniyle işletmeyi reaktif ceza faturasıyla karşı karşıya getirmektedir.</p>
+<h2 id="görünür--aktif-ve-reaktif-güç-arasındaki-bağlantı">Görünür , Aktif Ve Reaktif Güç Arasındaki Bağlantı</h2>
+<ul>
+<li>Aktif güç elektrikte iş yapan güçtür. P ile
+gösterilen aktif güç şebekeden çekilen akım
+ile gerilim arasındaki açının (φ) cosinüsü ile
+akım ve gerilimin çarpılması ile bulunur .
+<code>(P=V.I.cosφ)</code>. Sistem üç fazlı ise çekilen güç
+de √3 ile çarpılır <code>(P=√3.V.I.cosφ)</code>. Aktif gücün
+birimi Watt’tır(W).</li>
+<li>Reaktif güç ise manyetik alanla çalışan motor,
+trafo gibi elektrik makinelerinin çektiği
+güçtür ve manyetik alanın oluşması için
+kullanılır. Reaktif güç; şebekeden çekilen
+akım ve gerilimin arasındaki açının (φ) sinüsü
+ile akım ve gerilimin çarpımı ile ifade edilir ve
+Q ile gösterilir
+<code>Q=P.tanφ</code>. Reaktif gücün birimi Var dır.</li>
+<li>Görünür güç şebekeden çekilen görünür
+güç olarak bilinir S ile gösterilir ve tek
+fazlı sistemlerde <code>S=V.I</code> olarak ifade edilir.
+Ayrıca görünür güç aktif ve reaktif
+güçlerin karelerinin toplamının karekökü
+ile ifade edilir <code>(S=√(P²+Q²)</code>. Görünür
+gücün birimi Volt Amper’dir (VA).</li>
+</ul>
+<blockquote>
+<ul>
+<li>Reaktif güç şebekeden çekildiği gibi
+şebekeye reaktif güç veren sistemler de
+bulunmaktadır. İletim sisteminden
+çekilen veya iletim sistemine verilen
+reaktif güç iletim sisteminde ek kayıplara
+ve simetrisizliklere neden olduğu için
+hattan çekilen reaktif güce sınırlama
+getirilmiştir.</li>
+<li>P/S ile ifade edilebilen cosφ ifadesi; yani
+akım ile gerilim arasındaki açının cosinüsü
+1′e yakın olmalıdır. Mevcut kanuna göre <strong>0,90</strong>
+olması istenen cosφ değeri AB standartları ile
+<strong>0,98-0,99-1,0</strong>′e yükseltilecektir. Yani
+şebekeden çekilen akım ile gerilim arasında
+neredeyse hiç faz farkı olması
+istenmemektedir. cosφ güç faktörü olarak da
+ifade edilir.</li>
+<li>Şebekeden çekilecek reaktif enerji
+sınırlandırıldığına göre, sistemin ihtiyacı
+olan (manyetik alan oluşumu vs. için)
+reaktif enerjinin bir şekilde karşılanması
+gerekmektedir.</li>
+<li>İşte burada devreye kompanzasyon
+sistemleri girmektedir. Kompanzasyon
+sistemleri sistemin ihtiyacı olan endüktif
+veya kapasitif reaktif enerjiyi verecek
+reaktör veya kapasitörlerden oluşan
+sistemlerdir.</li>
+<li>Reaktif enerjiye alternatif akım
+sistemlerinde ihtiyaç duyulur. Dolayısıyla
+doğru akım sistemlerinde reaktif
+enerjiden bahsedilemediği için çekilen
+aktif güç görünür güce eşittir.</li>
+</ul>
+</blockquote>
+<h3 id="güç-faktörü">Güç Faktörü</h3>
+<p><img src="https://abdulkadir-aslan.github.io/img/python/g%C3%BCc_fakt%C3%B6r%C3%BC.JPG" alt="Güç faktörü"></p>
+<p><strong>Güç faktörü (cosφ = P/S)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tek Faz</th>
+<th>Üç Faz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S = V.I</td>
+<td>S = √3.V.I</td>
+</tr>
+<tr>
+<td>P = V.I.cosφ</td>
+<td>P = √3.V.I.cosφ</td>
+</tr>
+<tr>
+<td>Q = V.I.sinφ</td>
+<td>Q = √3.V.I.sinφ</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reaktif-ceza--hesaplama">Reaktif Ceza  Hesaplama</h2>
+<ul>
+<li>ite :İlk toplam endex</li>
+<li>ste :Son toplam endex</li>
+<li>iee , see :İlk endüktif enerji ,Son endüktif enerji</li>
+<li>ike , ske :İlk kapasitif enerji ,Son kapasitif enerji</li>
+</ul>
+<p>Endüktif Ceza =<strong>((see-iee )/(ste - ite))*%100</strong></p>
+<p>Kapasitif Ceza = <strong>((ske-ike )/(ste - ite))*%100</strong></p>
+<p>Örneğin aşağıdaki gibi bir tablomuz olsun .Bu tablodan Reaktif cezayı hesaplayalım.</p>
+<table>
+<thead>
+<tr>
+<th>ÖRNEK TÜKETİM HESAPLAMA TABLOSU</th>
+<th>AKTİF ENERJİ (kWh)</th>
+<th>ENDÜKTİF ENERJİ (kVAR)</th>
+<th>KAPASİTİF ENERJİ (kVAR)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>İLK ENDEKS (01.08.2021)</td>
+<td>720</td>
+<td>450</td>
+<td>250</td>
+</tr>
+<tr>
+<td>SON ENDEKS (31.08.2020)</td>
+<td>1500</td>
+<td>750</td>
+<td>300</td>
+</tr>
+<tr>
+<td>TÜKETİM MİKTARI</td>
+<td>780</td>
+<td>300</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Reaktif Ceza Oranı</td>
+<td></td>
+<td>38.5%</td>
+<td>6.4%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rektif-ceza-hesaplam-uygulaması">Rektif Ceza Hesaplam Uygulaması</h2>
+<p><img src="https://abdulkadir-aslan.github.io/img/python/ruygulama.JPG" alt="uygulama"></p>
+<p>Yukarıda görselde gösterildiği gibi uygulama arayüzü 5 label ,text ve buton&rsquo;dan oluşmaktadır.</p>
+<ol>
+<li>
+<p>Label otomatik hesplama için girilmiştir.</p>
+<blockquote>
+<p>Bölgenizde bulunan Elektrik Tedarik Şirketinin portalından alınan veriler yapıştırılarak otomatik hesaplama yapar.Eğer bölgenizde ki dağıtım şirketinin portalı aşağıdaki gibi ise sizde kopyala yapıştır yaparak hesaplama yapabilirsiniz.
+<img src="https://abdulkadir-aslan.github.io/img/python/label1.jpg" alt="uygulama"></p>
+</blockquote>
+</li>
+<li>
+<p>Label Toplam tüketilen <strong>son</strong> endex verisini el ile girilmelidir.</p>
+</li>
+<li>
+<p>Label Toplam tüketilen <strong>ilk</strong> endex verisini el ile girilmelidir.</p>
+</li>
+<li>
+<p>Label Reaktif veya Kapasitif <strong>son</strong> endex verisini el ile girilmelidir.</p>
+</li>
+<li>
+<p>Label Reaktif veya Kapasitif  <strong>ilk</strong> endex verisini el ile girilmelidir.</p>
+</li>
+</ol>
+<p><strong>Hesapla</strong> butonuna bastığınızda girdiğiniz veriler otomatik olarak hesaplanır ve butonun aşağısında bulunan text ekranında gösterilir&hellip;</p>
+<p>Uygulamayı bilgisyarınıza indirip kurmak için <a href="https://github.com/abdulkadir-aslan/Reaktif-ceza-hesaplayici/blob/main/mysetup.exe">buraya</a></p>
+<p>Uygulama ait kodlara ulaşmak için <a href="https://github.com/abdulkadir-aslan/Reaktif-ceza-hesaplayici">Github</a> hesabımdan ulaşabilirsiniz..</p>
+
+          </div>
+
+          
+          <div class="row">
+            <div class="col-md-8">
+            
+              <div class="mb-5">
+                
+<div class="li-x div-x post-meta">
+  <li class="pr-0"><a href="https://abdulkadir-aslan.github.io/tags/"><i class="fas fa-tags"></i></a></li>
+  <div class="tags-sm">
+    
+      <li><a href="https://abdulkadir-aslan.github.io/tags/python" role="button">Python </a></li>
+      
+    
+      <li><a href="https://abdulkadir-aslan.github.io/tags/kompanzasyon" role="button">Kompanzasyon </a></li>
+      
+    
+      <li><a href="https://abdulkadir-aslan.github.io/tags/reaktif-ceza" role="button">Reaktif Ceza </a></li>
+      
+    
+      <li><a href="https://abdulkadir-aslan.github.io/tags/osos" role="button">Osos </a></li>
+      
+    
+  </div>
+</div>
+              </div>
+            
+            </div>
+            
+          </div>
+          
+
+          
+          <div class="row pt-3">
+            <div class="col-md-6">
+              
+                <a href=https://abdulkadir-aslan.github.io/blog/2021-07/python-ile-kendi-hesap-makinam%C4%B1-yapt%C4%B1m/ class="post-meta">Previous
+                  <div class="pt-2 pb-5 d-flex">
+                    <i class="fas fa-angle-left text-grey font-weight-bold mr-2 active-color"></i>
+                    <span>Python İle Kendi Hesap Makinamı Yaptım</span>
+                  </div>
+                </a>
+              
+            </div>
+            
+            <div class="col-md-6 text-right" >
+              
+            </div>
+          </div>
+
+          
+
+        </div>
+        
+
+      </div>
+      
+
+      
+	
+	
+	
+	
+		
+		
+		
+	
+
+		
+		<div class="col-md-2 pl-0">
+
+			
+			<div id="page-scrollspy" class="toc-nav">
+				
+				<ul class="nav nav-pills ml-0">
+					
+					<li class="nav-item pb-3 text-center">
+						<span class="font-weight-bold mb-2">- CATALOG - </span>
+					</li>
+
+					
+						
+						
+							
+								
+								
+									<ul class="nav">
+								
+								
+
+										<li class="nav-item">
+						 					<a class="nav-link" href="#reaktif-ceza-nedir-nas%c4%b1l-olu%c5%9fuyor-">
+												 Reaktif Ceza Nedir Nasıl Oluşuyor ?
+											</a>
+										</li>
+						 
+								
+								
+									</ul>
+								
+							
+						
+				 
+						
+						
+							
+								
+								
+									<ul class="nav">
+								
+								
+
+										<li class="nav-item">
+						 					<a class="nav-link" href="#g%c3%b6r%c3%bcn%c3%bcr--aktif-ve-reaktif-g%c3%bc%c3%a7-aras%c4%b1ndaki-ba%c4%9flant%c4%b1">
+												 Görünür , Aktif Ve Reaktif Güç Arasındaki Bağlantı
+											</a>
+										</li>
+						 
+								
+								
+									</ul>
+								
+							
+						
+				 
+						
+						
+							
+								
+								
+									<ul class="nav">
+								
+									<ul class="nav">
+								
+								
+
+										<li class="nav-item">
+						 					<a class="nav-link" href="#g%c3%bc%c3%a7-fakt%c3%b6r%c3%bc">
+												 Güç Faktörü
+											</a>
+										</li>
+						 
+								
+								
+									</ul>
+								
+									</ul>
+								
+							
+						
+				 
+						
+						
+							
+								
+								
+									<ul class="nav">
+								
+								
+
+										<li class="nav-item">
+						 					<a class="nav-link" href="#reaktif-ceza--hesaplama">
+												 Reaktif Ceza Hesaplama
+											</a>
+										</li>
+						 
+								
+								
+									</ul>
+								
+							
+						
+				 
+						
+						
+							
+								
+								
+									<ul class="nav">
+								
+								
+
+										<li class="nav-item">
+						 					<a class="nav-link" href="#rektif-ceza-hesaplam-uygulamas%c4%b1">
+												 Rektif Ceza Hesaplam Uygulaması
+											</a>
+										</li>
+						 
+								
+								
+									</ul>
+								
+							
+						
+				 
+
+				</ul>
+			</div>
+			
+
+		</div>
+		
+	
+
+    </div>
+    
+
+
+  </main>
+  
+
+
+    
+    
+
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+
+  
+  <div class="pb-2 mt-5 pt-5">
+    
+      <a href="//github.com/abdulkadir-aslan " target="_blank" rel="noopener"><i class="fab fa-github mr-3" aria-hidden="true"></i></a>    
+    
+    
+      <a href="//linkedin.com/in/abdulkadiraslan" target="_blank" rel="noopener"><i class="fab fa-linkedin-in mr-3" aria-hidden="true"></i></a>
+    
+
+    
+      <a href="//facebook.com/abdulkadiraslan63" target="_blank" rel="noopener"><i class="fab fa-facebook-f mr-3" aria-hidden="true"></i></a>
+    
+
+    
+    <a href="//google.com/" target="_blank" rel="noopener"><i class="fab fa-google-plus-g mr-3" aria-hidden="true"></i></a>
+    
+
+    
+        <a href="//twitter.com/" target="_blank" rel="noopener"><i class="fab fa-twitter mr-3" aria-hidden="true"></i></a>
+    
+
+    
+        <a href="//instagram.com/" target="_blank" rel="noopener"><i class="fab fa-instagram mr-3" aria-hidden="true"></i></a>
+    
+
+    
+
+
+    
+        <a href="mailto:abdulkadiraslan44@gmail.com"><i class="far fa-envelope-open mr-3" aria-hidden="true"></i></a>
+    
+
+    
+
+    
+
+  </div>
+  
+
+  
+  <div class="copyright py-4">
+    
+    <span>  2016 - 2021 &copy; | Theme <a href='https://github.com/orianna-zzo/AllinOne' target="_blank">AllinOne</a> by <a href='https://github.com/orianna-zzo' target="_blank">Orianna</a>  </span>
+    <br>
+    <script id="_waur68">var _wau = _wau || []; _wau.push(["colored", "55jtsyzq7v", "r68", "434343ffffff"]);</script><script async src="//waust.at/co.js"></script>
+  </div>
+  
+
+</footer>
+
+
+    
+
+
+
+
+
+
+<script type="text/javascript" src="https://abdulkadir-aslan.github.io/js/vendors/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://abdulkadir-aslan.github.io/js/vendors/jquery/jquery.smooth-scroll.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://abdulkadir-aslan.github.io/js/vendors/popper.min.js"></script>
+<script type="text/javascript" src="https://abdulkadir-aslan.github.io/js/vendors/holder.min.js"></script>
+<script type="text/javascript" src="https://abdulkadir-aslan.github.io/js/vendors-extensions/bootstrap4/bootstrap.js" ></script>
+
+<script type="text/javascript" src="https://abdulkadir-aslan.github.io/js/vendors/mdb/mdb.min.js"></script>
+
+<script type="text/javascript" src="https://abdulkadir-aslan.github.io/js/main.js"></script>
+
+
+
+  
+  <script src="https://abdulkadir-aslan.github.io/js/vendors/highlight.pack.js"> </script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+ 
+  <script src="https://abdulkadir-aslan.github.io/js/vendors/katex/katex.min.js"> </script>
+  <script src="https://abdulkadir-aslan.github.io/js/vendors/katex/contrib/auto-render.min.js"></script>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          renderMathInElement(document.body);
+      });
+  </script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  
+  new WOW().init();
+</script>
+
+
+
+
+  </body>
+</html>

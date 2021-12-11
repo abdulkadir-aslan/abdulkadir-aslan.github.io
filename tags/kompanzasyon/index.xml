@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kompanzasyon on Abdulkadir</title>
+    <link>https://abdulkadir-aslan.github.io/tags/kompanzasyon/</link>
+    <description>Recent content in Kompanzasyon on Abdulkadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Fri, 10 Dec 2021 20:14:59 +0800</lastBuildDate><atom:link href="https://abdulkadir-aslan.github.io/tags/kompanzasyon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python İle Reaktif Ceza Hesaplama Uygulaması Yaptım</title>
+      <link>https://abdulkadir-aslan.github.io/blog/2021-12/python-ile-reaktif-ceza-hesaplama-uygulamas%C4%B1-yapt%C4%B1m/</link>
+      <pubDate>Fri, 10 Dec 2021 20:14:59 +0800</pubDate>
+      
+      <guid>https://abdulkadir-aslan.github.io/blog/2021-12/python-ile-reaktif-ceza-hesaplama-uygulamas%C4%B1-yapt%C4%B1m/</guid>
+      <description>Reaktif Ceza Nedir Nasıl Oluşuyor ? Motorların, buzdolaplarının ve flüoresan lamba balastlarının işlevlerini yerine getirebilmesi için sargılarında manyetik alan oluşması gereklidir. Bunun için gerekli olan enerjiye reaktif enerji denilmektedir. Elektrik dağıtım şirketleri, reaktif enerjinin, tüketilen aktif enerjinin belli bir oran dahilinde kalmasını şart koşmaktadırlar. Özel trafolu işletmelerde sıklıkla karşı karşıya kalınan bu sorun, normal işletme koşullarına göre tasarımı yapılmış elektrik panolarındaki kondansatörler vasıtasıyla giderilmektedir. Anormal işletme koşullarında ise trafonun manyetik alanı için gereken reaktif enerji, trafodan çekilen çok küçük miktardaki aktif enerji oranı ve/veya büyük kapasiteli kondansatörlerin varlığın nedeniyle işletmeyi reaktif ceza faturasıyla karşı karşıya getirmektedir.
+Görünür , Aktif Ve Reaktif Güç Arasındaki Bağlantı  Aktif güç elektrikte iş yapan güçtür. P ile gösterilen aktif güç şebekeden çekilen akım ile gerilim arasındaki açının (φ) cosinüsü ile akım ve gerilimin çarpılması ile bulunur . (P=V.I.cosφ). Sistem üç fazlı ise çekilen güç de √3 ile çarpılır (P=√3.V.I.cosφ). Aktif gücün birimi Watt’tır(W). Reaktif güç ise manyetik alanla çalışan motor, trafo gibi elektrik makinelerinin çektiği güçtür ve manyetik alanın oluşması için kullanılır. Reaktif güç; şebekeden çekilen akım ve gerilimin arasındaki açının (φ) sinüsü ile akım ve gerilimin çarpımı ile ifade edilir ve Q ile gösterilir Q=P.tanφ. Reaktif gücün birimi Var dır. Görünür güç şebekeden çekilen görünür güç olarak bilinir S ile gösterilir ve tek fazlı sistemlerde S=V.</description>
+    </item>
+    
+  </channel>
+</rss>
